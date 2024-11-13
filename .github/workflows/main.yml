@@ -25,7 +25,7 @@ jobs:
       run: dotnet build ./AzureProject.sln --configuration Release
 
     - name: Publish
-      run: dotnet publish ./AzureProject.sln --configuration Release --no-build --output '${{ secrets.AZURE_PUBLISH_PROFILE }}'
+      run: dotnet publish ./AzureProject.sln --configuration Release --no-build --output './publish'
     - name: Deployment
       uses: azure/webapps-deploy@v2
       with: 
