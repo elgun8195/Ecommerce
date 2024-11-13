@@ -15,7 +15,7 @@ using System.Text;
 
 public class Program
 {
-    public static void Main(string[] args) // Static olaraq düz?ltdik
+    public static void Main(string[] args)  
     {
         var builder = WebApplication.CreateBuilder(args);
 
